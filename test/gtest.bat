@@ -11,5 +11,5 @@ cd _build
 REM Checkout files  
 echo on
 REM cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug -DBUILD_GMOCK=On -DGOOGLETEST_TOOLS=On
-cmake .. -G "MinGW Makefiles" -DGOOGLETEST_TOOLS=Off
+cmake .. -G "MinGW Makefiles" -DGOOGLETEST_TOOLS=On
 cmake --build .
