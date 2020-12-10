@@ -1,5 +1,3 @@
-set (CMAKE_CURRENT_BINARY_DIR ${PROJECT_BINARY_DIR} )
-
 # Download and unpack googletest at configure time
 configure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)
 execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
@@ -36,10 +34,3 @@ endif()
 #add_executable(example example.cpp)
 #target_link_libraries(example gtest_main)
 #add_test(NAME example_test COMMAND example)
-
-
-#unit test
-include_directories(${CMAKE_CURRENT_BINARY_DIR}/googletest-src/googlemock/include ${CMAKE_CURRENT_BINARY_DIR}/googletest-src/googletest/include)
-
-
-

@@ -11,4 +11,4 @@ file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true
 set(SOURCES ${SOURCES})
 add_library(${BINARY}_lib STATIC ${SOURCES})
 
-
+target_link_libraries(${BINARY}_lib gtest_main)
