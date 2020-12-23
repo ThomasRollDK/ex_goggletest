@@ -5,5 +5,7 @@
 
 int formular_bla(int arg1)
 {
-    return  calc(arg1 * 2);
+    arg1 = calc(arg1);
+	arg1 = arg1 * 2;
+	return arg1;
 }

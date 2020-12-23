@@ -18,14 +18,16 @@ class c_test1 : public i_test1 {
 
 
 class c_test1_mock : public i_test1 {
-    static c_test1_mock *instance;
+//    static c_test1_mock *instance;
  public:
- static c_test1_mock *getInstance() {
-      if (!instance)
-      instance = new c_test1_mock;
-      return instance;
-   }
- MOCK_METHOD(int, _calc, (int arg1), (override));
+/*	 static c_test1_mock *getInstance() {
+		 if (!instance) {
+			 instance = new c_test1_mock;
+		  }
+		  return instance;
+	   }
+*/
+	 MOCK_METHOD(int, _calc, (int arg1), (override));
 };
 
 
