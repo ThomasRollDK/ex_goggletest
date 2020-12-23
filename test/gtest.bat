@@ -10,6 +10,6 @@ cd build
   
 REM Checkout files  
 echo on
-cmake .. -G "MinGW Makefiles"
-REM cmake ..
+rem cmake .. -G "MinGW Makefiles"
+cmake ..
 cmake --build .
